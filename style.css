@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+* {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.Home{
+  position: relative;
+  min-height: 100vh;
+  background-image: url(./img/background.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 100px;
+}
+header nav a{
+  color: white;
+  font-size: 26px;
+  margin: 0 55px;
+  transition: all 0.3s;
+}
+header nav .active,
+header nav a:hover{
+  color: #ece80f;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.Home h1{
+  position: absolute;
+  font-size: 110px;
+  color: white;
+  z-index: 1001;
+  -webkit-text-stroke:2px black ;
+}
+.Home img{
+  position: absolute;
+  pointer-events: none;
+}
+.stars{
+  width: 100%;
+  top: 0;
+  transform-origin: 50% 55%;
+}
+.About{
+  min-height: 100vh;
+  font-size: 30px;
+  background-color: hwb(240 3% 77%);
+  color:white;
+  padding: 80px 90px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  gap: 60px;
+
+}
+.About h1{
+  font-size: 60px;
+  color: #dd11be;
+}
